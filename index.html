@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Vendas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Título da Oferta</h1>
+    </header>
+
+    <main>
+        <section class="video">
+            <video id="salesVideo" src="VELOZES E FURIOSOS 10 _ Trailer Oficial (Universal Studios) - HD.mp4" controls autoplay muted></video>
+        </section>
+
+        <section class="content">
+            <h2>Benefícios do Produto</h2>
+            <ul>
+                <li>Benefício 1</li>
+                <li>Benefício 2</li>
+                <li>Benefício 3</li>
+                <li>Benefício 4</li>
+            </ul>
+
+            <h2>Depoimentos</h2>
+            <div class="testimonial">
+                <p>"Depoimento 1"</p>
+                <p>- Nome do Cliente 1</p>
+            </div>
+            <div class="testimonial">
+                <p>"Depoimento 2"</p>
+                <p>- Nome do Cliente 2</p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Adquira Agora!</h2>
+            <p>Descrição da oferta e chamada para ação.</p>
+            <a id="buyLink" href="https://sua-loja.com/comprar" class="button" disabled>Comprar</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados &copy; 2023</p>
+    </footer>
+
+    <div align="right"> <a href="#"> <img src="seta.png" width="2%"> </a></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const salesVideo = document.getElementById('salesVideo');
+          const buyLink = document.getElementById('buyLink');
+
+          salesVideo.addEventListener('ended', function() {
+            buyLink.removeAttribute('disabled');
+          });
+        });
+    </script>
+</body>
+
+</html>
