@@ -1,54 +1,64 @@
-/* Reset de estilos para garantir consistência */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
-  
-  body {
+
+body {
+    margin: 0;
+    padding: 0;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #f2f2f2;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     line-height: 1.5;
-  }
-  
-  header {
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
     text-align: center;
     padding: 20px;
     background-color: #eee;
-  }
-  
-  h1 {
-    font-size: 30px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  main {
+}
+
+main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-  }
-  
-  .video {
-    position: relative;
-    padding-bottom: 56.25%; /* Mantém proporção de 16:9 */
-    margin-bottom: 20px;
-  }
-  
-  .video video {
-    position: absolute;
-    top: 0;
-    left: 0;
+}
+
+
+header, main, section, footer {
     width: 100%;
-    height: 100%;
-    border-radius: 4px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+h4 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #524f4f;
   }
-  
-  .content h2 {
+
+
+.content h2 {
     margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
@@ -59,48 +69,80 @@
     list-style-type: disc;
     margin-left: 20px;
     margin-bottom: 20px;
-  }
-  
-  .testimonial {
+    text-align: left;
+  }  
+
+.testimonial {
     margin-top: 20px;
     padding: 20px;
     background-color: #f2f2f2;
     border-radius: 4px;
-  }
+}
   
-  .testimonial p:first-child {
+.testimonial p:first-child {
     margin-bottom: 10px;
-  }
-  
-  .cta {
-    text-align: center;
-    margin-top: 40px;
-  }
-  
-  .button {
+}
+
+.hidden {
+    display: none;
+}
+
+.video {
+    margin-bottom: 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+}
+
+.button {
     display: inline-block;
-    padding: 12px 20px;
+    padding: 15px 30px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
-    border-radius: 4px;
-    font-size: 18px;
     font-weight: bold;
+    border-radius: 4px;
     transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     background-color: #0056b3;
-  }
-  
-  .footer {
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta-bottom {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px 
+}
+
+.footer {
     text-align: center;
     padding: 20px;
     background-color: #eee;
-  }
+}
   
   .footer p {
     font-size: 14px;
     color: #777;
+}
+
+.anchor-wrapper {
+    position: relative;
+    bottom: 20px;
+    margin-left: 1350px;
   }
-  
